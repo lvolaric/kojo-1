@@ -28,7 +28,7 @@ import net.kogics.kojo.util.Utils
  */
 object LangMenuFactory {
 
-  val supportedLanguages = List("en", "sv", "fr", "pl" , "nl", "eo", "hi", "de", "ru", "it")
+  val supportedLanguages = List("en", "sv", "fr", "pl", "nl", "eo", "hi", "de", "hr", "ru"/*,"it"*/)
 
   def createLangMenu()(implicit kojoCtx: core.KojoCtx) = {
     var langMenus: Seq[JCheckBoxMenuItem] = Vector()
@@ -82,6 +82,7 @@ object LangMenuFactory {
     "it" → "Italiano (Italian)",
     "hi" → "हिंदी (Hindi)",
     "de" → "Deutsch (German)",
+	"hr" → "Hrvatski"
     "ru" → "Русский (Russian)"
   )
 
